@@ -1,0 +1,340 @@
+<apex:page showHeader="true" standardStylesheets="false" standardController="Dashboard" sidebar="false" docType="html-5.0">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<head>
+  <title>IPS Analytics Index</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS0120, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+<body>
+
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds">
+
+<!-- PAGE HEADER -->
+<div class="slds-page-header" role="banner">
+
+  <!-- PAGE HEADER TOP ROW -->
+  <div class="slds-grid">
+
+    <!-- PAGE HEADER / ROW 1 / COLUMN 1 -->
+    <div class="slds-col">
+
+      <!-- HEADING AREA -->
+      <!-- MEDIA OBJECT = FIGURE + BODY -->
+      <div class="slds-media">
+
+        <div class="slds-media__figure">
+          <svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-dashboard">
+            <use xlink:href="{!URLFOR($Resource.SLDS0120, 'assets/icons/standard-sprite/svg/symbols.svg#dashboard')}"></use>
+          </svg>
+        </div>
+
+        <div class="slds-media__body">
+          <p class="slds-text-heading--label">Dashboards</p>
+          <h1 class="slds-text-heading--medium">IPS Analytics</h1>
+        </div>
+
+      </div>
+      <!-- / MEDIA OBJECT -->
+      <!-- HEADING AREA -->
+
+    </div>
+    <!-- / PAGE HEADER / ROW 1 / COLUMN 1 -->
+
+  </div>
+  <!-- / PAGE HEADER TOP ROW -->
+  <!-- PAGE HEADER DETAIL ROW -->
+<div class="slds-grid slds-page-header__detail-row">
+
+  <!-- PAGE HEADER / ROW 2 / COLUMN 1 -->
+  <div class="slds-col slds-size--1-of-1">
+    <dl>
+      <dt>
+        <p class="slds-text-heading--label slds-truncate">Description</p>
+      </dt>
+      <dd>
+        <p class="slds-text-body--regular">Tableau analytics dashboards for the admin team.</p>
+      </dd>
+    </dl>
+  </div>
+</div>
+<!-- / PAGE HEADER DETAIL ROW -->
+
+</div>
+<!-- / PAGE HEADER -->
+
+
+  <!-- PRIMARY CONTENT WRAPPER -->
+  <div class="myapp">
+
+  <!-- RELATED LIST CARDS-->
+  <div class="slds-grid slds-m-top--large slds-wrap">
+
+  <!-- MAIN CARD -->
+  <div class="slds-col slds-p-right--large slds-size--6-of-12">
+
+    <div class="slds-card">
+
+      <header class="slds-card__header slds-grid">
+        <div class="slds-col slds-media slds-media--center">
+          <div class="slds-media__figure">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-metrics slds-icon--small">
+              <use xlink:href="{!URLFOR($Resource.SLDS0120, 'assets/icons/standard-sprite/svg/symbols.svg#metrics')}"></use>
+            </svg>
+          </div>
+          <div class="slds-media__body">
+            <h3 class="slds-text-heading--small">Sales Performance</h3>
+          </div>
+        </div>
+      </header>
+
+      <!-- CARD BODY = TABLE -->
+      <section class="slds-card__body">
+        <div class="slds-scrollable--x">
+          <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+            <thead>
+              <tr class="slds-no-hover">
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Name</th>
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Last Modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getTableauCSGDashboard" target="_blank">CSG Home Activity Dashboard</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/29/15</td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getTableauCSMDashboard" target="_blank">Manager Home Activity Dashboard</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/29/15</td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getTableauMonthlyReports" target="_blank">Sales Trends Dashboard</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/26/15</td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getMGTSalesReviewDashboard" target="_blank">Manager Monthly Review Dashboard</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/29/15</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </section>
+      <!-- / CARD BODY = SECTION + TABLE -->
+    </div>
+
+  </div>
+  <!-- / MAIN CARD -->
+  <!-- MAIN CARD -->
+  <div class="slds-col slds-p-right--large slds-size--6-of-12">
+
+    <div class="slds-card">
+
+      <header class="slds-card__header slds-grid">
+        <div class="slds-col slds-media slds-media--center">
+          <div class="slds-media__figure">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-metrics slds-icon--small">
+              <use xlink:href="{!URLFOR($Resource.SLDS0120, 'assets/icons/standard-sprite/svg/symbols.svg#metrics')}"></use>
+            </svg>
+          </div>
+          <div class="slds-media__body">
+            <h3 class="slds-text-heading--small">Leads/Opps Analysis</h3>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- CARD BODY = TABLE -->
+      <section class="slds-card__body">
+        <div class="slds-scrollable--x">
+          <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+            <thead>
+              <tr class="slds-no-hover">
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Name</th>
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Last Modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getLeadOppWinRateData" target="_blank">Leads/Opps by Rep/Source/Geo</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/26/15</td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getLeadProgressionData" target="_blank">Lead Progression Dashboard</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/26/15</td>
+              </tr>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getOutsideLeadsDashboard" target="_blank">OSG Leads Overview</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/26/15</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </section>
+      <!-- / CARD BODY = SECTION + TABLE -->
+    </div>
+
+  </div>
+  <!-- / MAIN CARD -->
+  </div>
+  <!-- / RELATED LIST CARDS -->
+
+  <!-- RELATED LIST CARDS-->
+  <div class="slds-grid slds-m-top--large slds-wrap">
+
+  <!-- MAIN CARD -->
+  <div class="slds-col slds-p-right--large slds-size--6-of-12">
+
+    <div class="slds-card">
+
+      <header class="slds-card__header slds-grid">
+        <div class="slds-col slds-media slds-media--center">
+          <div class="slds-media__figure">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-metrics slds-icon--small">
+              <use xlink:href="{!URLFOR($Resource.SLDS0120, 'assets/icons/standard-sprite/svg/symbols.svg#metrics')}"></use>
+            </svg>
+          </div>
+          <div class="slds-media__body">
+            <h3 class="slds-text-heading--small">Activity Analysis</h3>
+          </div>
+        </div>
+      </header>
+
+      <!-- CARD BODY = TABLE -->
+      <section class="slds-card__body">
+        <div class="slds-scrollable--x">
+          <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+            <thead>
+              <tr class="slds-no-hover">
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Name</th>
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Last Modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getTableauActivityDashboard" target="_blank">Results Tracking – Rep Dashboard Metrics</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/26/15</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </section>
+      <!-- / CARD BODY = SECTION + TABLE -->
+    </div>
+
+  </div>
+  <!-- / MAIN CARD -->
+  <!-- MAIN CARD -->
+  <div class="slds-col slds-p-right--large slds-size--6-of-12">
+
+    <div class="slds-card">
+
+      <header class="slds-card__header slds-grid">
+        <div class="slds-col slds-media slds-media--center">
+          <div class="slds-media__figure">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-metrics slds-icon--small">
+              <use xlink:href="{!URLFOR($Resource.SLDS0120, 'assets/icons/standard-sprite/svg/symbols.svg#metrics')}"></use>
+            </svg>
+          </div>
+          <div class="slds-media__body">
+            <h3 class="slds-text-heading--small">Industry/SIC Analysis</h3>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- CARD BODY = TABLE -->
+      <section class="slds-card__body">
+        <div class="slds-scrollable--x">
+          <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+            <thead>
+              <tr class="slds-no-hover">
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Name</th>
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Last Modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getTableauSICMixDashboard" target="_blank">SIC/Industry Mix Dashboard</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/26/15</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </section>
+      <!-- / CARD BODY = SECTION + TABLE -->
+    </div>
+
+  </div>
+  <!-- / MAIN CARD -->
+  </div>
+  <!-- / RELATED LIST CARDS -->
+
+  <!-- RELATED LIST CARDS-->
+  <div class="slds-grid slds-m-top--large slds-wrap">
+
+  <!-- MAIN CARD -->
+  <div class="slds-col slds-p-right--large slds-size--12-of-12">
+
+    <div class="slds-card">
+
+      <header class="slds-card__header slds-grid">
+        <div class="slds-col slds-media slds-media--center">
+          <div class="slds-media__figure">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-metrics slds-icon--small">
+              <use xlink:href="{!URLFOR($Resource.SLDS0120, 'assets/icons/standard-sprite/svg/symbols.svg#metrics')}"></use>
+            </svg>
+          </div>
+          <div class="slds-media__body">
+            <h3 class="slds-text-heading--small">Marketing Analysis</h3>
+          </div>
+        </div>
+      </header>
+
+      <!-- CARD BODY = TABLE -->
+      <section class="slds-card__body">
+        <div class="slds-scrollable--x">
+          <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+            <thead>
+              <tr class="slds-no-hover">
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Name</th>
+                <th class="slds-text-heading--label slds-size--1-of-2" scope="col">Last Modified</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="slds-hint-parent">
+                <td class="slds-size--1-of-2" data-label="Name"><a href="https://c.na15.visual.force.com/apex/getSEOGapAnalysis" target="_blank">SEO/Campaign Explorer</a></td>
+                <td class="slds-size--1-of-2" data-label="Last Modified">11/26/15</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </section>
+      <!-- / CARD BODY = SECTION + TABLE -->
+    </div>
+
+  </div>
+  <!-- / MAIN CARD -->
+
+  </div>
+  <!-- / RELATED LIST CARDS -->
+
+  </div>
+  <!-- / PRIMARY CONTENT WRAPPER -->
+
+  </div>
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+</body>
+
+<!-- JAVASCRIPT -->
+<!-- / JAVASCRIPT -->
+
+</html>
+</apex:page>
